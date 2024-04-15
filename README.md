@@ -32,7 +32,7 @@
 - **Edit Configuration File**:
   - Command: `vi controller-info.xml`
 - **Configurations to Update**:
-- ```
+  ```
   controller-host = ceer.saas.appdynamics.com
   controller-port = 443
   controller-ssl-enabled = true
@@ -48,7 +48,11 @@
 - **Script Modification for Java Agent**:
   - Update the command to include:
     ```
-    nohup java -javaagent:/home/centos/agents/java-agent/javaagent.jar -Dappdynamics.agent.tierName=Tier1 -Dappdynamics.agent.nodeName=Node1 -DconfigFile=./config/tier1.json -jar ./java-services.jar > $FILEOUT 2>&1 &
+    nohup java -javaagent:/home/centos/agents/java-agent/javaagent.jar \
+               -Dappdynamics.agent.tierName=Tier1 \
+               -Dappdynamics.agent.nodeName=Node1 \
+               -DconfigFile=./config/tier1.json \
+               -jar ./java-services.jar > $FILEOUT 2>&1 &
     ```
   - Apply unique names for Tiers and Nodes for all 5 Java Processes
 
