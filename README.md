@@ -51,7 +51,7 @@
 - **Edit Startup Script**:
   - Command: `vi start.sh`
 - **Script Modification for Java Agent**:
-  - Update the command to include:
+  - Update the command to include (tierName & nodeName):
     ```
     nohup java -javaagent:/home/centos/agents/java-agent/javaagent.jar \
                -Dappdynamics.agent.tierName=Tier1 \
