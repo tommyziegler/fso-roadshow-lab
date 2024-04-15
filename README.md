@@ -32,13 +32,14 @@
 - **Edit Configuration File**:
   - Command: `vi controller-info.xml`
 - **Configurations to Update**:
-  - `controller-host` = ceer.saas.appdynamics.com
-  - `controller-port` = 443
-  - `controller-ssl-enabled` = true
-  - `application-name` = Recommend using "myFirstApp-CI-<YOUR-LASTNAME>"
-  - `account-name` = ceer
-  - `account-access-key` = Insert your key here
-
+- ```
+  controller-host = ceer.saas.appdynamics.com
+  controller-port = 443
+  controller-ssl-enabled = true
+  application-name = Recommend using "myFirstApp-CI-<YOUR-LASTNAME>"
+  account-name = ceer
+  account-access-key = Insert your key here
+  ```
 ### [5] Attach Java Agent to JVMs
 - **Navigate to Application Lab Directory**:
   - Command: `cd /home/centos/labs/myFirstApp-lab`
