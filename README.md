@@ -33,12 +33,17 @@
   - Command: `vi controller-info.xml`
 - **Configurations to Update**:
   ```
-  controller-host = ceer.saas.appdynamics.com
-  controller-port = 443
-  controller-ssl-enabled = true
-  application-name = Recommend using "myFirstApp-CI-<YOUR-LASTNAME>"
-  account-name = ceer
-  account-access-key = Insert your key here
+  <controller-host> ceer.saas.appdynamics.com </controller-host>
+
+  <controller-port> 443 </controller-port>
+  
+  <controller-ssl-enabled> true </controller-ssl-enabled>
+
+  <application-name> myFirstApp-CI-<YOUR-LASTNAME> </application-name>
+
+  <account-name> ceer </account-name>
+
+  <account-access-key> <ACCOUNT-ACCESS-KEY> </account-access-key>
   ```
 ### [5] Attach Java Agent to JVMs
 - **Navigate to Application Lab Directory**:
